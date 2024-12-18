@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0" />
+    <title> Services</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            scroll-behavior: smooth;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        :root {
+            --main-color: rgb(0, 0, 0);
+            --text-color: #050505;
+            --bg-color: #debfde;
+            --big-font: 5rem;
+            --h2-font: 2.25rem;
+            --p-font: 0.9rem;
+
+        }
+
+        *::selection {
+            background: var(--main-color);
+            color: #fff;
+        }
+
+        body {
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 170px;
+            background: var(--bg-color);
+
+        }
+
+        .logo {
+            color: var(--main-color);
+            font-weight: 600;
+            font-size: 2.4rem;
+
+        }
+
+        .navbar {
+            display: flex;
+
+        }
+
+        .navbar a {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            font-weight: 500;
+
+        }
+
+        .navbar a:hover {
+            color: var(--main-color);
+            transition: .4s;
+
+        }
+
+        #icon {
+            font-size: 2rem;
+            cursor: pointer;
+
+        }
+
+        section {
+            padding: 70px 11.7%;
+        }
+
+        .home {
+            width: 100%;
+            min-height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .section_1 {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .section_1 img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .panel_box {
+            width: 405px;
+            height: 520px;
+            background-color: #eae8e8;
+            border: none;
+            border-radius: 5px;
+            color: #1e1c2a;
+        }
+
+        .panel_text {
+            margin: 15px;
+        }
+
+        .buy_btn {
+            border: none;
+            border-radius: 6px;
+            background-color: #ff702a;
+            padding: 5px 10px 5px 10px;
+            margin-top: 5px;
+
+        }
+
+        button a {
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .hero_section {
+            display: flex;
+            flex-direction: column;
+            /* row-gap: 1.5rem; */
+        }
+    </style>
+</head>
+
+<body bgcolor="white">
+    <header>
+        <a href="#" class="logo">Contact Us </a>
+        <div class="bx bx-menu" id="icon"></div>
+        <ul class="navbar">
+            <li> <a href="/index.html">Home</a></li>
+            <li> <a href="/gallery/">Gallery</a></li>
+            <li> <a href="/services/services.html">Services</a></li>
+            <li> <a href="/contacts/contacts.html">Contact</a></li>
+            <li> <a href="/about/about.html" target="_blank">About</a></li>
+        </ul>
+    </header><br><br><br><br>
+
+
+
+
+    <div>
+
+        <article>
+            <div class="hero_section">
+
+                <section>
+                    <div class="section_1">
+
+                        <div class="panel_box">
+                            <img src="/contacts/cu.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>Welcome To Our Contact Platforms.</h1>
+                                <i>
+                                    <p>Find more about us </p>
+                                </i>
+                                <button class="buy_btn"><a href="#">Explore More</a></button>
+                            </div>
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="/contacts/wa.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>WhatsApp</h1>
+                                <p>Text Us on WhatsApp </p>
+                                <button class="buy_btn"><a href="https://wa.me/qr/YRK2ABWJMBW7A1">Message
+                                        Us</a></button>
+                            </div>
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="/contacts/angela.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>Snapchat</h1>
+                                <p>Add us on snap</p>
+                                <button class="buy_btn"><a
+                                        href="https://www.snapchat.com/add/angie_mens023?share_id=1rb3J3rYbmU&locale=en-GH">Book
+                                        Now</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="section_1">
+
+                        <div class="panel_box">
+                            <img src="/contacts/inst.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>Instagram</h1>
+                                <p>Follow us on Instagram</p>
+                                <button class="buy_btn"><a
+                                        href="https://www.instagram.com/angie_mens023/profilecard/?igsh=MWpqaGx1dWJ4aHdraQ==">Follow
+                                        Us</a></button>
+                            </div>
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="/contacts/twit.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>X</h1>
+                                <p>Follow us on X</p>
+                                <button class="buy_btn"><a href="#">Book Now</a></button>
+                            </div>
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="/contacts/fb.jpeg.jpg" alt="">
+
+                            <div class="panel_text">
+                                <h1>Facebook</h1>
+                                <p>Follow our facebook page</p>
+                                <button class="buy_btn"><a
+                                        href="https://www.facebook.com/angela.mensah.948494?mibextid=ZbWKwL">Book
+                                        Now</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                </section>
+
+            </div>
+        </article>
+    </div>
+    <script src="html.js"></script>
+</body>
+
+</html>

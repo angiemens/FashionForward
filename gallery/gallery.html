@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0" />
+    <title> Gallery</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            scroll-behavior: smooth;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        :root {
+            --main-color: rgb(3, 3, 3);
+            --text-color: #000000;
+            --bg-color: #debfde;
+            --big-font: 5rem;
+            --h2-font: 2.25rem;
+            --p-font: 0.9rem;
+
+        }
+
+        *::selection {
+            background: var(--main-color);
+            color: #fff;
+        }
+
+        body {
+            color: var(--text-color);
+            background: var(--bg-color);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 170px;
+            background: var(--bg-color);
+
+        }
+
+        .logo {
+            color: var(--main-color);
+            font-weight: 600;
+            font-size: 2.4rem;
+
+        }
+
+        .navbar {
+            display: flex;
+
+        }
+
+        .navbar a {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            font-weight: 500;
+
+        }
+
+        .navbar a:hover {
+            color: var(--main-color);
+            transition: .4s;
+
+        }
+
+        #icon {
+            font-size: 2rem;
+            cursor: pointer;
+
+        }
+
+        section {
+            padding: 70px 11.7%;
+        }
+
+        .home {
+            width: 100%;
+            min-height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .section_1 {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2rem;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .section_1 img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .panel_box {
+            width: 405px;
+            height: 400px;
+            background-color: #eae8e8;
+            border: none;
+            border-radius: 5px;
+            color: #1e1c2a;
+        }
+
+        .panel_text {
+            margin: 15px;
+        }
+
+        .buy_btn {
+            border: none;
+            border-radius: 6px;
+            background-color: #ff702a;
+            padding: 5px 10px 5px 10px;
+            margin-top: 5px;
+
+        }
+
+        button a {
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .hero_section {
+            display: flex;
+            flex-direction: column;
+            /* row-gap: 1.5rem; */
+        }
+    </style>
+</head>
+
+<body bgcolor="white">
+    <header>
+        <a href="#" class="logo">What We Offer</a>
+        <div class="bx bx-menu" id="icon"></div>
+        <ul class="navbar">
+            <li> <a href="/index.html">Home</a></li>
+            <li> <a href="/gallery/gallery.html">Gallery</a></li>
+            <li> <a href="/services/services.html">Services</a></li>
+            <li> <a href="/contacts/contacts.html">Contact</a></li>
+            <li> <a href="/about/about.html" target="_blank">About</a></li>
+        </ul>
+    </header><br><br><br><br>
+
+
+
+
+    <div>
+
+        <article>
+            <div class="hero_section">
+
+                <section>
+                    <div class="section_1">
+
+                        <div class="panel_box">
+                            <img src="\gallery\stack.jpeg.jpg"  alt="" >,
+
+
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="\gallery\st.jpeg.jpg" alt="">,
+
+
+
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="\gallery\ts.jpeg.jpg" alt="">
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="section_1">
+
+                        <div class="panel_box">
+                            <img src="\gallery\kk.jpeg.jpg" alt="">
+
+
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="\gallery\j1.jpeg.jpg" alt="">
+
+
+                        </div>
+
+                        <div class="panel_box">
+                            <img src="\gallery\j2.jpeg.jpg" alt="">
+
+
+
+                        </div>
+                </section>
+                </section>
+
+            </div>
+        </article>
+    </div>
+
+    <script src="./html.js"></script>
+</body>
+
+</html>

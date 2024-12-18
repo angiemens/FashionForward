@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0" />
+    <title> Services</title>
+
+    <style>
+
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif;
+scroll-behavior: smooth;
+list-style: none;
+text-decoration: none;
+}
+:root{
+--main-color:rgb(3, 3, 3);
+--text-color:#030303;
+--bg-color:#d8bfd8;
+--big-font:5rem;
+--h2-font: 2.25rem;
+--p-font:0.9rem;
+
+}
+*::selection{
+    background: var(--main-color);
+    color:#fff;
+}
+body{
+   color: var(--text-color);
+   background: var(--bg-color);
+}
+header{
+    position: fixed;
+    top:0;
+    right:0;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding:30px 170px ;
+    background: var(--bg-color);
+
+}
+.logo{
+    color:var(--main-color);
+    font-weight:600;
+    font-size: 2.4rem;
+    
+}
+.navbar{ display: flex;
+
+}
+.navbar a{color:var(--text-color);
+    font-size: 1.1rem;
+    padding:10px 20px;
+    font-weight:500;
+
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+
+}
+#icon{
+    font-size: 2rem;
+    cursor:pointer;
+    
+}
+section{
+    padding:70px 11.7%;
+}
+.home{
+width:100%;
+min-height: 90vh;
+display: grid;
+grid-template-columns:repeat(2,1fr);
+grid-gap:1.5rem;
+align-items: center;
+text-align: center;
+
+}
+
+.section_1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.section_1 img{
+    width: 400px;
+    height: 400px;
+}
+.panel_box{
+    width: 405px;
+    height: 520px;
+    background-color: #eae8e8;
+    border: none;
+    border-radius: 5px;
+    color: #1e1c2a;
+}
+.panel_text{
+margin: 15px;
+}
+.buy_btn{
+    border: none;
+    border-radius: 6px;
+    background-color: ss;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+    
+}
+button a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1.5rem; */
+}
+    </style>
+</head>
+
+<body style="background-color: #d8bfd8;">
+    <header>
+        <a href="#" class="logo">Fashion Forward Services</a>
+        <div class="bx bx-menu" id="icon"></div>
+        <ul class="navbar">
+            <li> <a href="/index.html">Home</a></li>
+          <li> <a href="/gallery/gallery.html">Gallery</a></li>
+          <li> <a href="/services/services.html">Services</a></li>
+          <li> <a href="/contacts/contacts.html">Contact</a></li>
+          <li> <a href="/about/about.html" target="_blank">About</a></li>
+        </ul>
+    </header><br><br><br><br>
+
+    
+
+
+<div>
+
+<article>
+<div class="hero_section">
+
+    <section>
+        <div class="section_1">
+
+            <div class="panel_box">
+                <img src="/services/welks.jpeg.jpg" alt="">
+
+                <div class="panel_text">
+                    <h1>Welcome Lovely Customer</h1>
+                <i><p>Welcome to our field of services </p></i>
+                <button class="buy_btn"><a href="#">Explore More</a></button>
+                </div>
+            </div>
+
+            <div class="panel_box">
+                <img src="/services/men.jpeg.jpg" alt="">
+
+                <div class="panel_text">
+                    <h1>Wedding Outfits(Men)</h1>
+                <p>Savor every moment with our thoughtfully designed and quality material wedding outfits</p>
+                <button class="buy_btn"><a href="#">Order Now</a></button>
+                </div>
+            </div>
+
+            <div class="panel_box">
+                <img src="/services/cw.jpeg.jpg" alt="">
+
+                 <div class="panel_text">
+                    <h1>Casual Wear</h1>
+                <p>Experience Casuality with our large variety of Casual menu offerings</p>
+                <button class="buy_btn"><a href="#">Order Now</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="section_1">
+
+            <div class="panel_box">
+                <img src="/services/shoe.jpeg.jpg" alt="">
+
+                <div class="panel_text">
+                    <h1>Footwear(Men)</h1>
+                <p>Hit us up for all types of affordable but quality footwear, both official and Casual</p>
+                <button class="buy_btn"><a href="#">Order Now</a></button>
+                </div>
+            </div>
+
+            <div class="panel_box">
+                <img src="/services/perf.jpeg.jpg" alt="">
+
+                <div class="panel_text">
+                    <h1>Men's Perfume</h1>
+                <p>Discover the world of well scented perfumes from our wide variety to choose from</p>
+                <button class="buy_btn"><a href="#">Order Now</a></button>
+                </div>
+            </div>
+
+            <div class="panel_box">
+                <img src="/services/jew.jpeg.jpg" alt="">
+
+                 <div class="panel_text">
+                    <h1>Men's Jewelry</h1>
+                <p>Make your own choices from a world full of different types of quality and affordable jewelries</p>
+                <button class="buy_btn"><a href="#">Order Now</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+</div>
+</article>
+</div>
+<script src="html.js"></script>
+</body>
+</html>
